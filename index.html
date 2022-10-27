@@ -21,14 +21,18 @@
                 <label class="d-none" for="task-text">toDo</label>
                 <input type="text" id="task-text" placeholder="inserisci una nuova nota" v-model="newTask.toDo">
                 <button @click="addNewTask">aggiungi alla lista</button>
+
             </div>
 
             <ul class="task_list">
                 <li v-for="(index, toDo) in tasks" class="d-flex justify-content-between fs-4 m-3">
-                    {{index.toDo}}
-                    <strong class="text-danger fs-4"> 
-                        &cross;
-                    </strong>
+                    <P>{{index.toDo}}</P>
+                    
+                    <div>  
+                        <button class="m-2 fs-6" @click="doneBtn">Done</button>
+                        <strong class="text-danger fs-4">&cross;</strong>
+                    </div>
+                    
                 </li>
             </ul>
         </main>
@@ -37,3 +41,5 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
+<!-- :class="(is done ? `done_task` : ``)" -->

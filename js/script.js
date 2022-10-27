@@ -45,8 +45,13 @@ createApp({
             this.newTask = {
                 toDo: "",
                 done: false
-            }
+            }   
+        },
+        doneBtn(){
+            this.tasks.done = true;
+            // if(this.index.done = true){
             
+            // }
         }
     }
 }
