@@ -48,7 +48,7 @@ createApp({
             }   
         },
         doneBtn(){
-            this.tasks.done = true;
+            this.index.done = true;
             // if(this.index.done = true){
             
             // }
