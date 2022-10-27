@@ -1,0 +1,9 @@
+.task_list{
+    background-color: cornflowerblue;
+    width: 80%;
+    margin: 2rem auto;
+}
+.add_toDo{
+    width: 80%;
+    margin: 2rem auto;
+}
