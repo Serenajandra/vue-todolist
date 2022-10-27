@@ -25,8 +25,8 @@
             </div>
 
             <ul class="task_list">
-                <li v-for="(index, toDo) in tasks" class="d-flex justify-content-between fs-4 m-3">
-                    <P>{{index.toDo}}</P>
+                <li v-for="(task, index) in tasks" class="d-flex justify-content-between fs-4 m-3">
+                    <P>{{task.toDo}}</P>
                     
                     <div>  
                         <button class="m-2 fs-6" @click="doneBtn">Done</button>
